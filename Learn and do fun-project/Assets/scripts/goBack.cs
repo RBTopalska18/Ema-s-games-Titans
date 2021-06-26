@@ -7,6 +7,7 @@ public class goBack : MonoBehaviour
 {
     public int teleportNumber;
     public int teleportNumber2;
+    public int teleportNumber3;
     public void goEnglish()
     {
         FindObjectOfType<AudioManager>().Play("button");
@@ -16,6 +17,11 @@ public class goBack : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("button");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + teleportNumber2);
+    }
+    public void goGeography()
+    {
+        FindObjectOfType<AudioManager>().Play("button");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + teleportNumber3);
     }
     public void quit()
     {
