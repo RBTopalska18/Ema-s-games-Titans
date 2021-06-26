@@ -11,7 +11,7 @@ public class geography : MonoBehaviour
     public Text wordOutput;
     public Text scoreText;
     private string container;
-    public InputField inputfieldname;
+    public InputField inputfield;
 
     private string[] Country = { "Bulgaria", "Turkey", "Germany", "France" };
     private string[] Capital = { "София", "Истамбул", "Берлин", "Париж" };
@@ -50,8 +50,8 @@ public class geography : MonoBehaviour
 
     private void clear()
     {
-        inputfieldname.Select();
-        inputfieldname.text = "";
+        inputfield.Select();
+        inputfield.text = "";
     }
 
     public void getAnswer()
@@ -62,8 +62,8 @@ public class geography : MonoBehaviour
         input.onEndEdit = se;
     }
 
-    private void SubmitAnswer(string arg0)
+    private void SubmitAnswer(string text)
     {
-        container = arg0;
+        container = text;
     }
 }

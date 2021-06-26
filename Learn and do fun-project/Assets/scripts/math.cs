@@ -10,7 +10,7 @@ public class math : MonoBehaviour
 {
     public Text wordOutput;
     public Text scoreText;
-    public InputField inputfieldname;
+    public InputField inputfield;
     string container;
 
     private int numberA;
@@ -97,8 +97,8 @@ public class math : MonoBehaviour
 
     private void clear()
     {
-        inputfieldname.Select();
-        inputfieldname.text = "";
+        inputfield.Select();
+        inputfield.text = "";
     }
 
     public void getAnswer()
@@ -109,8 +109,8 @@ public class math : MonoBehaviour
         input.onEndEdit = se;
     }
 
-    private void SubmitAnswer(string arg0)
+    private void SubmitAnswer(string text)
     {
-        container = arg0;
+        container = text;
     }
 }

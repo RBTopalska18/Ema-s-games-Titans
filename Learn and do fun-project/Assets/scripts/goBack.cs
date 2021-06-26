@@ -5,23 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class goBack : MonoBehaviour
 {
-    public int teleportNumber;
-    public int teleportNumber2;
-    public int teleportNumber3;
     public void goEnglish()
     {
         FindObjectOfType<AudioManager>().Play("button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + teleportNumber);
+        SceneManager.LoadScene(1);
     }
     public void goMath()
     {
         FindObjectOfType<AudioManager>().Play("button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + teleportNumber2);
+        SceneManager.LoadScene(2);
     }
     public void goGeography()
     {
         FindObjectOfType<AudioManager>().Play("button");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + teleportNumber3);
+        SceneManager.LoadScene(3);
+    }
+    public void goMenu()
+    {
+        FindObjectOfType<AudioManager>().Play("button");
+        SceneManager.LoadScene(0);
     }
     public void quit()
     {

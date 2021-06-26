@@ -11,7 +11,7 @@ public class TypeScript : MonoBehaviour
     public Text wordOutput;
     public Text scoreText;
     private string container;
-    public InputField inputfieldname;
+    public InputField inputfield;
 
     private string[] bg = {"здравей","довиждане","ябълка","морков"};
     private string[] en = { "Hello", "Bye", "Apple", "Carrot"};
@@ -50,8 +50,8 @@ public class TypeScript : MonoBehaviour
 
     private void clear()
     {
-        inputfieldname.Select();
-        inputfieldname.text = "";
+        inputfield.Select();
+        inputfield.text = "";
     }
 
     public void getAnswer()
@@ -62,8 +62,8 @@ public class TypeScript : MonoBehaviour
         input.onEndEdit = se;
     }
 
-    private void SubmitAnswer(string arg0)
+    private void SubmitAnswer(string text)
     {
-        container = arg0;
+        container = text;
     }
 }
